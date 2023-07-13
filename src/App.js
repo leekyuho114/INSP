@@ -3,30 +3,49 @@ import './App.css';
 import React, { useState } from 'react';
 import {Routes, Route, Link, useNavigate, Outlet} from 'react-router-dom'
 import {Button, Container, Form, Nav, Navbar, NavDropdown, Offcanvas} from 'react-bootstrap';
-
+import Pictures from './Components/Pictures.js'
 function App() {
   let navigate = useNavigate();
+  const [sidebarOpen, setSidebarOpen] = useState(false);
+
+  const toggleSidebar = () => {
+    setSidebarOpen(!sidebarOpen);
+  };
   return (
     <>
       {[false].map((expand) => (
         <Navbar  key={expand} expand={expand} className="color-nav mb-3">
           <Container fluid>
-            <Navbar.Brand href="#">Project</Navbar.Brand>
-            <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
+            <Navbar.Brand onClick={()=>{navigate('/')}}>Project</Navbar.Brand>
+            <Navbar.Toggle 
+              aria-controls={`offcanvasNavbar-expand-${expand}`} 
+              onClick={toggleSidebar}
+            />
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}
               aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
               placement="end"
+              show={sidebarOpen}
             >
-              <Offcanvas.Header closeButton>
+              <Offcanvas.Header closeButton onClick={()=>{toggleSidebar()}}>
                 <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
                   Offcanvas
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
-                  <Nav.Link onClick={()=>{navigate('/')}}>Home</Nav.Link>
-                  <Nav.Link href="#action2">Link</Nav.Link>
+                  <Nav.Link onClick={()=>{
+                    navigate('/');
+                    toggleSidebar();
+                  }}>Home</Nav.Link>
+                  <Nav.Link onClick={()=>{
+                    navigate('/myPlay');
+                    toggleSidebar();
+                  }}>myPlay</Nav.Link>
+                  <Nav.Link onClick={()=>{
+                    navigate('/Best');
+                    toggleSidebar();
+                  }}>Best</Nav.Link>
                   <NavDropdown
                     title="Dropdown"
                     id={`offcanvasNavbarDropdown-expand-${expand}`}
@@ -56,10 +75,10 @@ function App() {
         </Navbar>
       ))}
       <Routes>
-        <Route path="/" element={<></>}/>
+        <Route path="/" element={<><Pictures/></>}/>
         <Route path="/detail/:id" element={<div></div>}/>
-        <Route path="/about" element={<div></div>}/>
-        <Route path="/event" element={<div></div>}>
+        <Route path="/myPlay" element={<div></div>}/>
+        <Route path="/Best" element={<div></div>}>
           <Route path="one" element={<div></div>}/>
           <Route path="two" element={<div></div>}/>
         </Route>
