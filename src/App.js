@@ -1,22 +1,48 @@
 import logo from './logo.svg';
 import './App.css';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {Routes, Route, Link, useNavigate, Outlet} from 'react-router-dom'
 import {Button, Container, Form, Nav, Navbar, NavDropdown, Offcanvas} from 'react-bootstrap';
 import Pictures from './Components/Pictures.js'
 function App() {
   let navigate = useNavigate();
   const [sidebarOpen, setSidebarOpen] = useState(false);
-
+  const [themeColor, setThemeColor] = useState('grey');
+  const [navbarStyle, setNavbarStyle] = useState({
+    borderBottom : '2px solid ' + themeColor, // 여기서 color state를 사용하여 동적으로 색상을 변경
+  });
+  const [logoStyle, setLogoStyle] = useState({
+    color: themeColor,
+    fontWeight: 'bold',
+  });
   const toggleSidebar = () => {
     setSidebarOpen(!sidebarOpen);
   };
+
+  useEffect(() => {// 여기서 navbarstyle 변경해줌
+    setNavbarStyle((prevStyle) => ({
+      ...prevStyle,
+      borderBottom : '2px solid ' + themeColor,
+    }));
+    setLogoStyle((prevStyle) => ({
+      ...prevStyle,
+      color: themeColor,
+    }));
+  }, [themeColor]);
+
   return (
     <>
       {[false].map((expand) => (
-        <Navbar  key={expand} expand={expand} className="color-nav mb-3">
+        <Navbar key={expand} expand={expand} className="mb-3" style={navbarStyle}>
           <Container fluid>
-            <Navbar.Brand onClick={()=>{navigate('/')}}>Project</Navbar.Brand>
+            {/* <Navbar.Brand className ="title-font"onClick={()=>{navigate('/')}}>InSP</Navbar.Brand> */}
+            <Navbar.Brand style={logoStyle} onClick={()=>{navigate('/')}}>InSP</Navbar.Brand>
+            <div className ="color-buttons">
+              <Button className ="color-button1" onClick={()=>{setThemeColor('rgb(13, 246, 246)')}}></Button>
+              <Button className ="color-button2" onClick={()=>{setThemeColor('rgb(235, 231, 17)')}}></Button>
+              <Button className ="color-button3" onClick={()=>{setThemeColor('rgb(15, 245, 15)')}}></Button>
+            </div>
+            
             <Navbar.Toggle 
               aria-controls={`offcanvasNavbar-expand-${expand}`} 
               onClick={toggleSidebar}
@@ -74,8 +100,14 @@ function App() {
           </Container>
         </Navbar>
       ))}
+
       <Routes>
-        <Route path="/" element={<><Pictures/></>}/>
+        <Route path="/" element={
+        <>
+          <div className = "main-bg"></div>
+          <Pictures/>
+        </>
+      }/>
         <Route path="/detail/:id" element={<div></div>}/>
         <Route path="/myPlay" element={<div></div>}/>
         <Route path="/Best" element={<div></div>}>
