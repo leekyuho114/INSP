@@ -1,13 +1,9 @@
-.App {
-  text-align: center;
-}
-.title-font{
-}
 .title-font:hover{
   color:rgb(238, 134, 7);
 }
 .color-buttons{
-  margin-left: 590px;
+  position: absolute;
+  right : 100px;
   display: flex;
   gap: 5px;
   justify-content: flex-end;
@@ -45,17 +41,11 @@
   background-size: contain;
   background-position: center;
 }
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main-pics{
+  width : 70%; 
+  height : 40%; 
+  margin-top : 15px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: flex;
 }
