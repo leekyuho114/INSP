@@ -10,7 +10,6 @@ function Pictures(props){
     <div className = 'main-pics'>
       <img  onClick={()=>{props.navigate('/detail/'+(props.num))}} src={process.env.PUBLIC_URL + '/img/row'+ (props.num+1) +'.jpg'} className = 'main-pics'/>
       <h4>{props.pics[props.num].title}</h4>
-      {/* <p>{props.pics[props.num].content}</p> */}
       <span onClick={handleLikeClick(props.num)}>💖</span> 
       <span style={{ fontWeight: 'bold' }}>{likes[props.num]}</span>
     </div>

@@ -32,7 +32,7 @@ function NavbarCustom(props){
   useEffect(() => {// themeColor 바뀔때마다 style 저장한 state 변경 해줌
     setNavbarStyle((prevStyle) => ({
       ...prevStyle,
-      borderBottom : '2px solid ' + themeColor,
+      borderBottom : '1.5px solid ' + themeColor,
     }));
     setLogoStyle((prevStyle) => ({
       ...prevStyle,

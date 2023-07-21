@@ -42,10 +42,18 @@
   background-position: center;
 }
 .main-pics{
-  width : 70%; 
-  height : 40%; 
-  margin-top : 15px;
-  object-fit: cover;
+  width : 250px; 
+  margin-top : 10px;
+  object-fit: cover; /*이미지 적합하게 배치*/
   border-radius: 10px;
+}
+.masonry-grid{
   display: flex;
+}
+.masonry-grid_column{
+  padding-left: 15px;
+}
+.container{
+  display: flex;
+  justify-content: center;
 }
