@@ -48,7 +48,7 @@ function Detail(props){
             </div>
           <button className="btn btn-secondary">주문하기</button> 
         </div>
-        <InputGroup className="mb-3" style={{ maxWidth: '70%' }}>
+        <InputGroup className="mb-3" style={{ maxWidth: '100%' , marginTop : '20px'}}>
                 <InputGroup.Text id="inputGroup-sizing-default">
                   Comment
                 </InputGroup.Text>

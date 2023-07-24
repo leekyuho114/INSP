@@ -4,27 +4,31 @@ function NavbarCustom(props){
     const [sidebarOpen, setSidebarOpen] = useState(false);
     const [themeColor, setThemeColor] = useState('grey');
     const [navbarStyle, setNavbarStyle] = useState({ // navbar 밑줄 색
-        borderBottom : '2px solid ' + themeColor, // 여기서 color state를 사용하여 동적으로 색상을 변경
+        padding : '20px', 
+        borderBottom : '1.5px solid ' + themeColor, // 여기서 color state를 사용하여 동적으로 색상을 변경
     });
     const [logoStyle, setLogoStyle] = useState({ //logo css
         color: themeColor,
+        marginLeft : '100px',
+        marginBottom : '20px',
         fontWeight: 'bold',
+        fontSize: '40px',
         cursor: 'pointer',
-        borderRadius: '5px',
+        borderRadius: '5px', 
     });
     const handleMouseOver = () => {// hover 역할 할거임
-        setLogoStyle({
-          ...logoStyle,
-          backgroundColor: 'rgba(0, 0, 0, 0.1)', // Change to the desired dark color
-        });
-      };
+      setLogoStyle({
+        ...logoStyle,
+        backgroundColor: 'rgb(0, 0, 0, 0.1)', // Change to the desired dark color
+      });
+    };
     
-      const handleMouseLeave = () => {
-        setLogoStyle({
-          ...logoStyle,
-          backgroundColor: 'transparent',
-        });
-      };
+    const handleMouseLeave = () => {
+      setLogoStyle({
+        ...logoStyle,
+        backgroundColor: 'transparent',
+      });
+    };
     const toggleSidebar = () => {
         setSidebarOpen(!sidebarOpen);
     };

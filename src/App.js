@@ -25,6 +25,7 @@ function App() {
         <Route path="/" element={
           <>
             <div className = "main-bg"></div>
+            {/* <div>나의 스타일</div> */}
             <div className = "container">
               <Masonry
                 breakpointCols={breakpointColumnsObj}
