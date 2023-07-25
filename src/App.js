@@ -2,7 +2,14 @@ import logo from './logo.svg';
 import './App.css';
 import React, { useState, useEffect } from 'react';
 import {Routes, Route, Link, useNavigate, Outlet} from 'react-router-dom'
-import {Button, Container, Form, Nav, Navbar, NavDropdown, Offcanvas} from 'react-bootstrap';
+
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+
 import Masonry from 'react-masonry-css';
 import Pictures from './Components/Pictures.js'
 import NavbarCustom from './Components/NavbarCustom.js';
@@ -26,7 +33,25 @@ function App() {
           <>
             <div className = "main-bg"></div>
             {/* <div>나의 스타일</div> */}
+            <Swiper
+      // install Swiper modules
+      modules={[Navigation, Pagination, Scrollbar, A11y]}
+      spaceBetween={50}
+      slidesPerView={3}
+      navigation
+      pagination={{ clickable: true }}
+      scrollbar={{ draggable: true }}
+      onSwiper={(swiper) => console.log(swiper)}
+      onSlideChange={() => console.log('slide change')}
+    >
+      <SwiperSlide>Slide 1</SwiperSlide>
+      <SwiperSlide>Slide 2</SwiperSlide>
+      <SwiperSlide>Slide 3</SwiperSlide>
+      <SwiperSlide>Slide 4</SwiperSlide>
+      ...
+    </Swiper>
             <div className = "container">
+
               <Masonry
                 breakpointCols={breakpointColumnsObj}
                 className="masonry-grid" // Masonry 그리드를 위한 클래스

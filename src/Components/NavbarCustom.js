@@ -2,7 +2,7 @@ import {Button, Container, Form, Nav, Navbar, NavDropdown, Offcanvas} from 'reac
 import React, { useState, useEffect } from 'react';
 function NavbarCustom(props){
     const [sidebarOpen, setSidebarOpen] = useState(false);
-    const [themeColor, setThemeColor] = useState('grey');
+    const [themeColor, setThemeColor] = useState('black');
     const [navbarStyle, setNavbarStyle] = useState({ // navbar 밑줄 색
         padding : '20px', 
         borderBottom : '1.5px solid ' + themeColor, // 여기서 color state를 사용하여 동적으로 색상을 변경
