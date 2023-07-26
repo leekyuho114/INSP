@@ -1,0 +1,40 @@
+.main-bg1{
+    height : 400px;
+    /* width: 100%; */
+    background-image: url('../img/main_bg1.jpg');
+    /* background-size: contain; */
+    background-position: center;
+
+}
+.main-bg2{
+  height : 400px;
+  /* width: 100%; */
+  background-image: url('../img/main_bg2.jpg');
+  /* background-size: contain; */
+  background-position: center;
+
+}
+.main-bg3{
+  height : 400px;
+  /* width: 100%; */
+  background-image: url('../img/main_bg3.jpg');
+  /* background-size: contain; */
+  background-position: center;
+
+}
+.main-bg4{
+  height : 400px;
+  /* width: 100%; */
+  background-image: url('../img/main_bg4.jpg');
+  /* background-size: contain; */
+  background-position: center;
+
+}
+.slide-module{
+  background-color: blanchedalmond;
+  height : 400px;
+}
+.slide-module .swiper-button-prev,
+.slide-module .swiper-button-next {
+  color: white; /* 화살표 색상을 흰색으로 변경 */
+}

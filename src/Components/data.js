@@ -15,21 +15,21 @@ let data =[
   
     {
       id : 2,
-      title : "ganzi T-shirts",
+      title : "mood room",
       content : "white color",
       likes : 0
     },
 
     {
       id : 3,
-      title : "riding jacket",
+      title : "rice koongya",
       content : "green color",
       likes : 0
     },
 
     {
       id : 4,
-      title : "riding jacket",
+      title : "dog",
       content : "green color",
       likes : 0
     },

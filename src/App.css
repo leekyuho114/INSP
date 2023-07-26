@@ -8,19 +8,19 @@
   height: 25px;
 }
 .color-button1{
-  background-color :rgb(13, 246, 246);
+  background-color :rgb(126, 88, 14);
   border : none;
 }
 .color-button1:hover{
-  background-color :rgb(15, 179, 179);
+  background-color :rgb(97, 58, 7);
   border : none;
 }
 .color-button2{
-  background-color :rgb(235, 231, 17);
+  background-color :rgb(46, 200, 8);
   border : none;
 }
 .color-button2:hover{
-  background-color :rgb(219, 215, 25);
+  background-color :rgb(27, 156, 12);
   border : none;
 }
 .color-button3{
@@ -30,13 +30,6 @@
 .color-button3:hover{
   background-color :rgb(12, 208, 48);
   border : none;
-}
-.main-bg{
-  height : 400px;
-  width: auto;
-  background-image: url('./img/main_bg.jpg');
-  background-size: contain;
-  background-position: center;
 }
 .main-pics{
   width : 250px; 

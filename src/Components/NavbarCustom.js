@@ -51,8 +51,8 @@ function NavbarCustom(props){
                 <Navbar.Brand className ="title-font" style={logoStyle} onClick={()=>{props.navigate('/')}} onMouseOver={handleMouseOver}
                 onMouseLeave={handleMouseLeave}>InSP</Navbar.Brand>
                 <div className ="color-buttons">
-                  <Button className ="color-button1" onClick={()=>{setThemeColor('rgb(13, 246, 246)')}}></Button>
-                  <Button className ="color-button2" onClick={()=>{setThemeColor('rgb(235, 231, 17)')}}></Button>
+                  <Button className ="color-button1" onClick={()=>{setThemeColor('rgb(126, 88, 14)')}}></Button>
+                  <Button className ="color-button2" onClick={()=>{setThemeColor('rgb(46, 200, 8)')}}></Button>
                   <Button className ="color-button3" onClick={()=>{setThemeColor('rgb(15, 245, 15)')}}></Button>
                 </div>
                 
@@ -78,7 +78,7 @@ function NavbarCustom(props){
                         toggleSidebar();
                       }}>Home</Nav.Link>
                       <Nav.Link onClick={()=>{
-                        props.navigate('/myPlay');
+                        props.navigate('/myPlay/2_95k');
                         toggleSidebar();
                       }}>myPlay</Nav.Link>
                       <Nav.Link onClick={()=>{
