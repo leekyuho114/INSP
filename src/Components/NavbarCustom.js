@@ -53,7 +53,7 @@ function NavbarCustom(props){
                 <div className ="color-buttons">
                   <Button className ="color-button1" onClick={()=>{setThemeColor('rgb(126, 88, 14)')}}></Button>
                   <Button className ="color-button2" onClick={()=>{setThemeColor('rgb(46, 200, 8)')}}></Button>
-                  <Button className ="color-button3" onClick={()=>{setThemeColor('rgb(15, 245, 15)')}}></Button>
+                  <Button className ="color-button3" onClick={()=>{setThemeColor('rgb(69, 92, 14)')}}></Button>
                 </div>
                 
                 <Navbar.Toggle 
