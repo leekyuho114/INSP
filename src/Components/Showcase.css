@@ -16,9 +16,9 @@
 }
 .main-bg3{
   height : 500px;
-  /* width: 100%; */
+  width: 100%;
   background-image: url('../img/main_bg3.jpg');
-  /* background-size: contain; */
+  background-size: contain;
   background-position: center;
 
 }
@@ -31,7 +31,6 @@
 
 }
 .slide-module{
-  background-color: blanchedalmond;
   height : 500px;
 }
 .slide-module .swiper-button-prev,

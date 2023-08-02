@@ -7,12 +7,16 @@ function Pictures(props){
     setLikes(newLikes);
   };
   return(
-    <div className = 'main-pics'>
-      <img  onClick={()=>{props.navigate('/detail/'+(props.num))}} src={process.env.PUBLIC_URL + '/img/row'+ (props.num+1) +'.jpg'} className = 'main-pics'/>
+    <>
+      <div className = 'main-pics'>
+        <img  onClick={()=>{props.navigate('/detail/'+(props.num))}} src={process.env.PUBLIC_URL + '/img/row'+ (props.num+1) +'.jpg'} className = 'main-pics'/>
+        <img src={process.env.PUBLIC_URL + '/img/profile_'+ (props.pics[props.num].user) +'.jpg'} className = 'user-profile'/>
+        <div className='pics-info'>@{props.pics[props.num].user}</div>
+      </div>
       <h4>{props.pics[props.num].title}</h4>
       <span onClick={handleLikeClick(props.num)}>💖</span> 
       <span style={{ fontWeight: 'bold' }}>{likes[props.num]}</span>
-    </div>
+    </>
   );
 }
 

@@ -1,7 +1,7 @@
 let data =[
     {
       id : 0,
-      title : "yankees jacket",
+      title : "Animation drawing",
       content : "velvet color",
       user : "2_95k",
       likes : 0
@@ -9,7 +9,7 @@ let data =[
   
     {
       id : 1,
-      title : "riding jacket",
+      title : "street cloth",
       content : "green color",
       user : "2_95k",
       likes : 0
@@ -41,7 +41,7 @@ let data =[
 
     {
       id : 5,
-      title : "riding jacket",
+      title : "draw idea",
       content : "green color",
       user : "gloomyskyy_",
       likes : 0
@@ -49,7 +49,7 @@ let data =[
 
     {
       id : 6,
-      title : "riding jacket",
+      title : "angry dog",
       content : "green color",
       user : "2_95k",
       likes : 0
@@ -57,7 +57,7 @@ let data =[
 
     {
       id : 7,
-      title : "riding jacket",
+      title : "traveling cat",
       content : "green color",
       user : "gloomyskyy_",
       likes : 0
@@ -65,7 +65,7 @@ let data =[
 
     {
       id : 8,
-      title : "riding jacket",
+      title : "cloth idea",
       content : "green color",
       user : "gloomyskyy_",
       likes : 0

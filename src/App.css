@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Roboto:wght@100;400;500;700&display=swap');
 .color-buttons{
   position: absolute;
   right : 100px;
@@ -31,11 +32,43 @@
   background-color :rgb(50, 80, 10);
   border : none;
 }
+.horizontal-line {
+  border: 1px solid #919191; /* 회색으로 설정한 구분선 */
+  width : 77%;
+  margin: 0 auto;
+}
+.main-title{
+  font-weight: bold;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  padding-left: 200px;
+}
 .main-pics{
+  position: relative;
   width : 250px; 
-  margin-top : 10px;
+  margin-top : 5px;
   object-fit: cover; /*이미지 적합하게 배치*/
   border-radius: 10px;
+  transition: opacity 0.3s ease; /* 효과를 부드럽게 적용하기 위해 트랜지션 설정 */
+}
+
+.main-pics:hover {
+  opacity: 0.8; /* hover 시 이미지의 투명도를 줄여 어두워지게 함 */
+}
+.user-profile{
+  position: absolute;
+  bottom: 10px; /* 원하는 높이로 조정 */
+  left: 10px; /* 원하는 위치로 조정 */
+  width: 25px;
+  height: 25px; 
+  border-radius : 100%;
+}
+.pics-info{
+  position: absolute;
+  bottom: 12px; /* 원하는 높이로 조정 */
+  left: 40px; /* 원하는 위치로 조정 */
+  color : white;
+  text-shadow : 1px 1px 1px rgba(0, 0, 0, 0.184);
 }
 .masonry-grid{
   display: flex;

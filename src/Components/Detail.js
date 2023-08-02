@@ -37,15 +37,14 @@ function Detail(props){
         }
         <div className="row">
           <div className="col-md-6">
-            <img src={process.env.PUBLIC_URL + '/img/row'+ nextId +'.jpg'} width="100%" />
+            <img src={process.env.PUBLIC_URL + '/img/row'+ nextId +'.jpg'} style={{ width : "100%", borderRadius : "20px" }} />
           </div>
-        <div className="col-md-6">
-          <h4 className="pt-5">{props.pics[pid].title}</h4>
-          <p>{props.pics[pid].content}</p>
-          <p>{props.pics[pid].content}</p>
-          <div style={{ display: 'flex', justifyContent: 'left' }}>
-              
-            </div>
+          <div className="col-md-6">
+            <h4 className="pt-5">{props.pics[pid].title}</h4>
+            <p>{props.pics[pid].content}</p>
+            <p>{props.pics[pid].content}</p>
+            <div style={{ display: 'flex', justifyContent: 'left' }}>      
+          </div>
           <button className="btn btn-secondary">주문하기</button> 
         </div>
         <InputGroup className="mb-3" style={{ maxWidth: '100%' , marginTop : '20px'}}>

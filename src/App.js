@@ -29,8 +29,10 @@ function App() {
       <Routes>
         <Route path="/" element={
           <>
-            
             <Showcase/>
+            <h4 className='main-title'>오늘 INSP</h4>
+            <hr className="horizontal-line" />
+            <h4 className='main-title'>@2_95k 추천 INSP</h4>
             <div className = "container">
               <Masonry
                 breakpointCols={breakpointColumnsObj}
@@ -49,6 +51,7 @@ function App() {
                 
               </Masonry>
             </div>
+            <hr className="horizontal-line" />
           </>
         }/>
         <Route path="/detail/:id" element={<div><Detail pics = {pics} num={1}/></div>}/>
