@@ -70,6 +70,38 @@ let data =[
       user : "gloomyskyy_",
       likes : 0
     },
+
+    {
+      id : 9,
+      title : "macbook interior",
+      content : "green color",
+      user : "gloomyskyy_",
+      likes : 0
+    },
+
+    {
+      id : 10,
+      title : "newjeans ditto",
+      content : "green color",
+      user : "2_95k",
+      likes : 0
+    },
+
+    {
+      id : 11,
+      title : "poster fallet",
+      content : "green color",
+      user : "gloomyskyy_",
+      likes : 0
+    },
+
+    {
+      id : 12,
+      title : "lucy drawing",
+      content : "green color",
+      user : "2_95k",
+      likes : 0
+    },
   ] 
   
   export default data;

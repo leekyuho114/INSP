@@ -24,7 +24,7 @@ function Myplay(props){
         <Container fluid>
           <Row>
             <Col>
-                <img src={process.env.PUBLIC_URL + '/img/profile'+ nextId +'.jpg'} className ='profile-picture'/>
+                <img src={process.env.PUBLIC_URL + '/img/profile_'+ (usernick)  +'.jpg'} className ='profile-picture'/>
             </Col>
             <Col className = 'title'>
             <h2>{usernick}</h2> 

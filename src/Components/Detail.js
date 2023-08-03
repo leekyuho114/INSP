@@ -1,15 +1,10 @@
 import React, { useEffect, useState } from "react";
 import {useParams} from "react-router-dom";
 import { Form, InputGroup} from 'react-bootstrap';
+import './Detail.css';
 function Detail(props){
-  useEffect(()=>{
-    let a = setTimeout(()=>{setSale(false)},2000)
-    return ()=>{
-      clearTimeout(a);
-    }
-  },[])
-  let [sale, setSale] = useState(true);
-  let [nan, setNan] = useState(true);
+
+  
   let {id} = useParams();
   let nextId = parseInt(id,10) +1;
   const pid = props.pics.findIndex(pic=>pic.id==id);
@@ -20,24 +15,17 @@ function Detail(props){
 
   const handleKeyDown = (event) => {
     if (event.key === 'Enter') {
-      if (isNaN(inputValue) || inputValue.trim() === '') {
-        alert('수량을 입력해주세요.');
-      }
+
       setInputValue('');
     }
   };
   if(id <= 8 && id>=0){
     return(
       <div className="container">
-        {
-          sale == true ?
-          <div className="alert alert-warning">
-            2초 이내 구매시 할인
-          </div> : null
-        }
+        
         <div className="row">
           <div className="col-md-6">
-            <img src={process.env.PUBLIC_URL + '/img/row'+ nextId +'.jpg'} style={{ width : "100%", borderRadius : "20px" }} />
+            <img src={process.env.PUBLIC_URL + '/img/row'+ nextId +'.jpg'} className = 'detail-pic'/>
           </div>
           <div className="col-md-6">
             <h4 className="pt-5">{props.pics[pid].title}</h4>

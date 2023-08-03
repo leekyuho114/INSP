@@ -12,6 +12,7 @@ import User from './Components/User.js';
 import Detail from './Components/Detail.js';
 import Showcase from './Components/Showcase.js';
 import Myplay from './Components/Myplay.js';
+//picture를 today로넘기면 오늘 최고 좋아요 사진 4개, marsonry로 넘기면 추천사진 marsonry
 function App() {
   let navigate = useNavigate();
   let [pics, setPics] = useState(data);
@@ -31,6 +32,15 @@ function App() {
           <>
             <Showcase/>
             <h4 className='main-title'>오늘 INSP</h4>
+            {
+                  pics.map(function(a,i){
+                    return(
+                      <>
+                        <Pictures pics = {pics} num={i} navigate = {navigate} option ={"today"}/>
+                      </>
+                    )
+                  })
+            }
             <hr className="horizontal-line" />
             <h4 className='main-title'>@2_95k 추천 INSP</h4>
             <div className = "container">
@@ -43,7 +53,7 @@ function App() {
                   pics.map(function(a,i){
                     return(
                       <>
-                        <Pictures pics = {pics} num={i} navigate = {navigate}/>
+                        <Pictures pics = {pics} num={i} navigate = {navigate} option ={"masonry"}/>
                       </>
                     )
                   })
