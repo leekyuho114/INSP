@@ -1,12 +1,15 @@
 import {Button, Container, Form, Nav, Navbar, NavDropdown, Offcanvas} from 'react-bootstrap';
 import React, { useState, useEffect } from 'react';
+import {BsArrowRepeat} from 'react-icons/bs'
 import './NavbarCustom.css'
 function NavbarCustom(props){
     const [sidebarOpen, setSidebarOpen] = useState(false);
     const [themeColor, setThemeColor] = useState('black');
+    const [themeStyle,setThemeStyle] =  useState(false); // 색뒤집기 상태
     const [navbarStyle, setNavbarStyle] = useState({ // navbar 밑줄 색
         padding : '20px', 
         borderBottom : '1.5px solid ' + themeColor, // 여기서 color state를 사용하여 동적으로 색상을 변경
+        backgroundColor : 'white'
     });
     const [logoStyle, setLogoStyle] = useState({ //logo css
         color: themeColor,
@@ -44,6 +47,36 @@ function NavbarCustom(props){
       color: themeColor,
     }));
   }, [themeColor]);
+  
+  const toggleTheme = () => {
+    setThemeStyle(prevThemeStyle => !prevThemeStyle); // 이전 상태값을 기반으로 토글
+
+  };
+
+  useEffect(() => {// themeColor 바뀔때마다 style 저장한 state 변경 해줌
+    if(themeStyle == false){
+      setNavbarStyle((prevStyle) => ({
+        ...prevStyle,
+        borderBottom : '1.5px solid ' + themeColor,
+        backgroundColor : 'white' 
+      }));
+      setLogoStyle((prevStyle) => ({
+        ...prevStyle,
+        color: themeColor,
+      }));
+    }
+    else if (themeStyle == true){
+      setNavbarStyle((prevStyle) => ({
+        ...prevStyle,
+        borderBottom : '1.5px solid ' + themeColor,
+        backgroundColor : themeColor 
+      }));
+      setLogoStyle((prevStyle) => ({
+        ...prevStyle,
+        color: 'white'
+      }));
+    }
+  }, [themeStyle]);
     return(
         <>
         {[false].map((expand) => (
@@ -52,8 +85,9 @@ function NavbarCustom(props){
                 <Navbar.Brand className ="title-font" style={logoStyle} onClick={()=>{props.navigate('/')}} onMouseOver={handleMouseOver}
                 onMouseLeave={handleMouseLeave}>InSP</Navbar.Brand>
                 <div className ="color-buttons">
-                  <Button className ="color-button1" onClick={()=>{setThemeColor('rgb(126, 88, 14)')}}></Button>
-                  <Button className ="color-button2" onClick={()=>{setThemeColor('rgb(46, 200, 8)')}}></Button>
+                  <Button className ="change-button" onClick={toggleTheme}><BsArrowRepeat className="change-icon"/></Button>
+                  <Button className ="color-button1" onClick={()=>{setThemeColor('rgb(68, 48, 8)')}}></Button>
+                  <Button className ="color-button2" onClick={()=>{setThemeColor('rgb(10, 11, 76)')}}></Button>
                   <Button className ="color-button3" onClick={()=>{setThemeColor('rgb(69, 92, 14)')}}></Button>
                 </div>
                 

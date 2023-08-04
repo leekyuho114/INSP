@@ -3,48 +3,15 @@
   border: 1px solid #919191; /* 회색으로 설정한 구분선 */
   width : 77%;
   margin: 0 auto;
+  margin-top: 25px;
+  margin-bottom: 30px;
 }
 .main-title{
   font-weight: bold;
   font-family: 'Noto Sans KR', sans-serif;
   font-family: 'Roboto', sans-serif;
   padding-left: 200px;
-  padding-top: 10px;
-}
-.main-pics{
-  position: relative;
-  width : 250px; 
-  margin-top : 5px;
-  object-fit: cover; /*이미지 적합하게 배치*/
-  border-radius: 10px;
-  transition: opacity 0.3s ease; /* 효과를 부드럽게 적용하기 위해 트랜지션 설정 */
-  
-}
-
-.main-pics:hover {
-  opacity : 0.8; /* hover 시 이미지의 투명도를 줄여 어두워지게 함 */
-}
-.user-profile{
-  position: absolute;
-  bottom: 10px; /* 원하는 높이로 조정 */
-  left: 10px; /* 원하는 위치로 조정 */
-  width: 25px;
-  height: 25px; 
-  border-radius : 100%;
-}
-.pics-info{
-  position: absolute;
-  bottom: 12px; /* 원하는 높이로 조정 */
-  left: 40px; /* 원하는 위치로 조정 */
-  color : white;
-  text-shadow : 1px 1px 1px rgba(0, 0, 0, 0.184); /*잘보이게 하기 위해 그림자*/
-}
-.pics-info:hover{
-  background-color: rgba(23, 23, 23, 0.5);
-  border-radius: 10%;
-}
-.profile-click{
-  cursor: pointer;
+  margin-top:15px
 }
 .masonry-grid{
   display: flex;
@@ -52,7 +19,7 @@
 .masonry-grid_column{
   padding-left: 15px;
 }
-.container{
+.container-masonry{
   display: flex;
   justify-content: center;
 }

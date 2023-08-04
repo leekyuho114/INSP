@@ -33,7 +33,7 @@ function Myplay(props){
             </Col>
           </Row>
           <Row>
-            <div className = "container">
+            <div className = "container-myplay">
               <Masonry
                 breakpointCols={breakpointColumnsObj}
                 className="masonry-grid" // Masonry 그리드를 위한 클래스
@@ -44,7 +44,7 @@ function Myplay(props){
                     if(a.user == usernick){
                       return(
                         <>
-                          <Pictures pics = {pics} num={i} navigate = {navigate}/>
+                          <Pictures pics = {pics} num={i} navigate = {navigate} option={"masonry"}/>
                         </>
                       )
                     }

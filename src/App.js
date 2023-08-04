@@ -32,6 +32,7 @@ function App() {
           <>
             <Showcase/>
             <h4 className='main-title'>오늘 INSP</h4>
+            <div className='today-pics'>
             {
                   pics.map(function(a,i){
                     return(
@@ -41,9 +42,10 @@ function App() {
                     )
                   })
             }
+            </div>
             <hr className="horizontal-line" />
             <h4 className='main-title'>@2_95k 추천 INSP</h4>
-            <div className = "container">
+            <div className = "container-masonry">
               <Masonry
                 breakpointCols={breakpointColumnsObj}
                 className="masonry-grid" // Masonry 그리드를 위한 클래스

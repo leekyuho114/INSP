@@ -21,8 +21,16 @@ let user =[
         uid : 2,
         id : 'refw143',
         password : 'fewfew',
-        nickname : "2_95k",
-        content : "안뇽",
+        nickname : "jooowonlee",
+        content : "",
+    },
+
+    {
+        uid : 3,
+        id : 'refwwagr143',
+        password : 'fehrwehwfew',
+        nickname : "wonik0601",
+        content : "🪖KR",
     },
 ] 
   

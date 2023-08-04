@@ -1,3 +1,17 @@
+.change-button{
+  background-color: white;
+  border-color: black;
+  color:black;
+}
+.change-button:hover{
+  background-color: rgb(213, 213, 213);
+  border-color: black;
+}
+.change-icon{
+  margin-left: -8px;
+  margin-right: -8px;
+  margin-top : -16px;  
+}
 .color-buttons{
     position: absolute;
     right : 100px;
@@ -6,21 +20,22 @@
     justify-content: flex-end;
     border-radius : 90%;
     height: 25px;
+    width : 25px;
   }
   .color-button1{
-    background-color :rgb(126, 88, 14);
+    background-color :rgb(68, 48, 8);
     border : none;
   }
   .color-button1:hover{
-    background-color :rgb(97, 58, 7);
+    background-color :rgb(53, 33, 6);
     border : none;
   }
   .color-button2{
-    background-color :rgb(46, 200, 8);
+    background-color :rgb(10, 11, 76);
     border : none;
   }
   .color-button2:hover{
-    background-color :rgb(27, 156, 12);
+    background-color :rgb(3, 4, 59);
     border : none;
   }
   .color-button3{
