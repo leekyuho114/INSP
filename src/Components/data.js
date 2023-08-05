@@ -10,7 +10,7 @@ let data =[
     {
       id : 1,
       title : "street cloth",
-      content : "green color",
+      content : "대충 내용 입력",
       user : "wonik0601",
       likes : 0
     },
@@ -26,7 +26,7 @@ let data =[
     {
       id : 3,
       title : "rice koongya",
-      content : "green color",
+      content : "대충 내용 입력",
       user : "2_95k",
       likes : 0
     },
@@ -34,7 +34,7 @@ let data =[
     {
       id : 4,
       title : "dog",
-      content : "green color",
+      content : "대충 내용 입력",
       user : "jooowonlee",
       likes : 0
     },
@@ -42,7 +42,7 @@ let data =[
     {
       id : 5,
       title : "draw idea",
-      content : "green color",
+      content : "대충 내용 입력",
       user : "gloomyskyy_",
       likes : 0
     },
@@ -50,7 +50,7 @@ let data =[
     {
       id : 6,
       title : "angry dog",
-      content : "green color",
+      content : "대충 내용 입력",
       user : "gloomyskyy_",
       likes : 0
     },
@@ -58,7 +58,7 @@ let data =[
     {
       id : 7,
       title : "traveling cat",
-      content : "green color",
+      content : "대충 내용 입력",
       user : "jooowonlee",
       likes : 0
     },
@@ -66,7 +66,7 @@ let data =[
     {
       id : 8,
       title : "cloth idea",
-      content : "green color",
+      content : "대충 내용 입력",
       user : "wonik0601",
       likes : 0
     },
@@ -74,7 +74,7 @@ let data =[
     {
       id : 9,
       title : "macbook interior",
-      content : "green color",
+      content : "대충 내용 입력",
       user : "jooowonlee",
       likes : 0
     },
@@ -82,7 +82,7 @@ let data =[
     {
       id : 10,
       title : "newjeans ditto",
-      content : "green color",
+      content : "대충 내용 입력",
       user : "2_95k",
       likes : 0
     },
@@ -90,7 +90,7 @@ let data =[
     {
       id : 11,
       title : "poster fallet",
-      content : "green color",
+      content : "대충 내용 입력",
       user : "jooowonlee",
       likes : 0
     },
@@ -98,7 +98,7 @@ let data =[
     {
       id : 12,
       title : "lucy drawing",
-      content : "green color",
+      content : "대충 내용 입력",
       user : "gloomyskyy_",
       likes : 0
     },
