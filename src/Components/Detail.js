@@ -32,6 +32,8 @@ function Detail(props){
 
           <div className="col-12 col-md-6">
             <img src={process.env.PUBLIC_URL + '/img/row'+ nextId +'.jpg'} className="detail-pic"/>
+            <h4 className="pt-5">{props.pics[pid].title}</h4>
+            <p>{props.pics[pid].content}</p>
           </div>
 
           <div className="col-12 col-md-6">
@@ -42,8 +44,7 @@ function Detail(props){
 
         <div className="row">
           <div className="col-12 col-md-6">
-            <h4 className="pt-5">{props.pics[pid].title}</h4>
-            <p>{props.pics[pid].content}</p>
+            {/* 원래 제목있었음 */}
           </div>
         </div>
       </div> 
