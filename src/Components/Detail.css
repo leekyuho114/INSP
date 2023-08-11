@@ -3,3 +3,6 @@
     object-fit: cover;
     border-radius : 20px;
 }
+.pic-title{
+    font-size:200%;
+}

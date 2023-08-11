@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import {Container,Row,Col} from 'react-bootstrap';
 import Masonry from 'react-masonry-css';
 import './Myplay.css';
-import Pictures from './Pictures';
+import Pictures from './Pictures.js';
 import data from './data.js';
 import {Routes, Route, Link, useNavigate, Outlet} from 'react-router-dom'
 
@@ -36,8 +36,8 @@ function Myplay(props){
             <div className = "container-myplay">
               <Masonry
                 breakpointCols={breakpointColumnsObj}
-                className="masonry-grid" // Masonry 그리드를 위한 클래스
-                columnClassName="masonry-grid_column"// 개별 컬럼을 위한 클래스
+                className="masonry-grid-myplay" // Masonry 그리드를 위한 클래스
+                columnClassName="masonry-grid-column-myplay"// 개별 컬럼을 위한 클래스
               >
                 {
                   pics.map(function(a,i){

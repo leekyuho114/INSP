@@ -43,9 +43,10 @@
 }
 .today-cards{
   height : 300px;
-  width : 300px; 
+  width : 300px;
   margin-top : 5px;
   object-fit: cover; /*이미지 적합하게 배치*/
+  /*background-size: contain;*/
   border-radius: 10px;
   transition: opacity 0.3s ease; /*효과를 부드럽게 적용하기 위해 트랜지션 설정*/
 }

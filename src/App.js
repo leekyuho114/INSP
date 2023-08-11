@@ -48,8 +48,8 @@ function App() {
             <div className = "container-masonry">
               <Masonry
                 breakpointCols={breakpointColumnsObj}
-                className="masonry-grid" // Masonry 그리드를 위한 클래스
-                columnClassName="masonry-grid_column"// 개별 컬럼을 위한 클래스
+                className="masonry-grid-app" // Masonry 그리드를 위한 클래스
+                columnClassName="masonry-grid-column-app"// 개별 컬럼을 위한 클래스
               >
                 {
                   pics.map(function(a,i){

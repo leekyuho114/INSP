@@ -13,13 +13,13 @@
   padding-left: 200px;
   margin-top:15px
 }
-.masonry-grid{
+.masonry-grid-app{ /*masonry-grid를 위한 클래스*/
   display: flex;
 }
-.masonry-grid_column{
+.masonry-grid-column-app{ /*개별 컬럼에 적용*/
   padding-left: 15px;
 }
-.container-masonry{
+.container-masonry{ /*flex로 선언하여 가운데정렬*/
   display: flex;
   justify-content: center;
 }
