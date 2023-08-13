@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Form, InputGroup} from 'react-bootstrap';
+import Moment from 'react-moment';
 import './Comment.css';
 function CommentForm({onAddComment}){ //props 넘기는거랑 똑같음
     const [newComment,setNewComment] = useState('');

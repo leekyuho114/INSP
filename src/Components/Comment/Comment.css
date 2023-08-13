@@ -1,5 +1,5 @@
 .comment{
-    
+    padding-bottom: 25px;
 }
 .comment-list{
 
@@ -7,4 +7,10 @@
 }
 .comment-profile{
     width: 30px;
+    border-radius: 100%;
+}
+.comment-nickname{
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight:620;
 }

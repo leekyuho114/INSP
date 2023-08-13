@@ -37,6 +37,7 @@ function Detail(props){
           </div>
 
           <div className="col-12 col-md-6">
+            <h5>댓글 3개</h5>
             <CommentForm onAddComment={handleAddComment} />
             <CommentList comments={comments} />
           </div>

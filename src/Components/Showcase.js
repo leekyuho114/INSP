@@ -20,10 +20,15 @@ function Showcase(){
         >
             <div className="swiper-button-prev" />
             <div className="swiper-button-next" />
-            <SwiperSlide className = "main-bg1"></SwiperSlide>
+            <SwiperSlide className = "main-bg1">
+
+            </SwiperSlide>
             <SwiperSlide className = "main-bg2"></SwiperSlide>
             <SwiperSlide className = "main-bg3"></SwiperSlide>
-            <SwiperSlide className = "main-bg4"></SwiperSlide>
+            <SwiperSlide className = "main-bg4">
+              <img src='https://www.pinterest.co.kr/pin/25895766601059108/'></img>
+            </SwiperSlide>
+            <SwiperSlide className = "main-bg5"></SwiperSlide>
         </Swiper>
     );
 }
