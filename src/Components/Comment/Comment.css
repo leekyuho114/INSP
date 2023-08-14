@@ -1,16 +1,48 @@
-.comment{
+.comment-container{
     padding-bottom: 25px;
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+}
+.comment-item:nth-child(1){ /*댓글에 프로필 사진 1~4까지 차지하도록*/
+    grid-row:1 / span 3 ;
+    grid-column:1/2 ;
+}
+.comment-item:nth-child(2){ /*이름이 두칸 차지*/
+    grid-row:1/2;
+    grid-column: 2 / span 2;
+}
+.comment-item:nth-child(3){/*댓글에 좋아요버튼 1~4까지 차지하도록*/
+    grid-row: 1 /span 3 ;
+    grid-column: 3/4;
+}
+.comment-item:nth-child(2), /*2번째 컬럼 왼쪽 패딩*/
+.comment-item:nth-child(4),
+.comment-item:nth-child(5){
+    padding-left: 10px;
 }
 .comment-list{
-
-
+    padding-left: 10px;
 }
 .comment-profile{
-    width: 30px;
+    width: 40px;
     border-radius: 100%;
+    padding-top: 5px;
+    cursor: pointer;
 }
 .comment-nickname{
-    padding-left: 10px;
-    padding-right: 10px;
-    font-weight:620;
+    font-weight:640;
+    transition: opacity 0.2s ease;
+}
+.comment-nickname:hover{
+    opacity : 0.5;
+    cursor: pointer;
+}
+.heart-button{
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    transition: opacity 0.2s ease; /*효과를 부드럽게 적용하기 위해 트랜지션 설정*/
+}
+.heart-button:hover{
+    opacity : 0.5; /* hover 시 이미지의 투명도를 줄여 어두워지게 함 */
 }

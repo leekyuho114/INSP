@@ -9,7 +9,6 @@ function Detail(props){
   let nextId = parseInt(id,10) +1;
   const pid = props.pics.findIndex(pic=>pic.id==id);
   const [comments,setComments] = useState([]);
-  
   const handleAddComment = (newComment)=>{
     setComments([...comments, newComment]);
   }
@@ -37,7 +36,6 @@ function Detail(props){
           </div>
 
           <div className="col-12 col-md-6">
-            <h5>댓글 3개</h5>
             <CommentForm onAddComment={handleAddComment} />
             <CommentList comments={comments} />
           </div>
