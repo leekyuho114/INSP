@@ -25,10 +25,7 @@ function Showcase(){
             </SwiperSlide>
             <SwiperSlide className = "main-bg2"></SwiperSlide>
             <SwiperSlide className = "main-bg3"></SwiperSlide>
-            <SwiperSlide className = "main-bg4">
-              <img src='https://www.pinterest.co.kr/pin/25895766601059108/'></img>
-            </SwiperSlide>
-            <SwiperSlide className = "main-bg5"></SwiperSlide>
+            <SwiperSlide className = "main-bg4"></SwiperSlide>
         </Swiper>
     );
 }
